@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>title</title>
+  </head>
+  <body>
+    <% @operation = params[:operation] %>
+    <% @num1 = params[:number1].to_i %>
+    <% @num2 = params[:number2].to_i %>
+
+    <% case @operation 
+       when "add" %>
+        <%= @num1 + @num2 %>
+      <% when "subtract" %>
+        <%= @num1 - @num2 %>
+      <% when "multiply" %>
+        <%= @num1 * @num2 %>
+      <% when "divide" %>
+        <%= @num1 / @num2 %>
+    <% end %>
+  </body>
+</html>
