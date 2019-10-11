@@ -36,7 +36,7 @@ class App < Sinatra::Base
      elsif operation == "divide"
         result = number1 / number2
      else
-        result = "Oops"
+        result = "Correct operation!"
      end
         result.to_s
   end
